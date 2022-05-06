@@ -69,6 +69,7 @@ describe('example to-do app', () => {
       .parent()
       .find('input[type=checkbox]')
       .check()
+      .check()
 
     // Now that we've checked the button, we can go ahead and make sure
     // that the list element is now marked as completed.
