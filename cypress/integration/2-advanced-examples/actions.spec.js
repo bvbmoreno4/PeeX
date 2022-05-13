@@ -2,7 +2,7 @@
 
 context('Actions', () => {
   beforeEach(() => {
-    cy.visit('https://example.cypress.io/commands/actions')
+    cy.visit('https://example.cypress.io/commands')
   })
 
   // https://on.cypress.io/interacting-with-elements
@@ -10,7 +10,7 @@ context('Actions', () => {
   it('.type() - type into a DOM element', () => {
     // https://on.cypress.io/type
     cy.get('.action-email')
-      .type('fake@email.com').should('have.value', 'fake@email')
+      .type('fake@email.com').should('have.value', 'fake@emailq')
 
       // .type() with special character sequences
       .type('{leftarrow}{rightarrow}{uparrow}{downarrow}')
