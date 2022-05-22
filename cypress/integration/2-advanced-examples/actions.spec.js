@@ -29,16 +29,6 @@ context('Actions', () => {
     
   })
 
-
-
-  it('.clear() - clears an input or textarea element', () => {
-    // https://on.cypress.io/clear
-    cy.get('.action-clear').type('Clear this text')
-      .should('have.value', 'Clear this text')
-      .clear()
-      .should('have.value', '')
-  })
-
   it('.submit() - submit a form', () => {
     // https://on.cypress.io/submit
     cy.get('.action-form')
