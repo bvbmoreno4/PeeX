@@ -29,6 +29,8 @@ context('Actions', () => {
     
   })
 
+<<<<<<< HEAD
+=======
 
 
   it('.clear() - clears an input or textarea element', () => {
@@ -39,6 +41,7 @@ context('Actions', () => {
       .should('have.value', '')
   })
 
+>>>>>>> parent of 784ddbd (removed test with blur)
   it('.submit() - submit a form', () => {
     // https://on.cypress.io/submit
     cy.get('.action-form')
