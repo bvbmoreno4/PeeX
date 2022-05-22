@@ -29,6 +29,25 @@ context('Actions', () => {
     
   })
 
+<<<<<<< HEAD
+=======
+
+  it('.blur() - blur off a DOM element', () => {
+    // https://on.cypress.io/blur
+    cy.get('.action-blur').type('About to blur').blur()
+      .should('have.class', 'error')
+      .prev().should('have.attr', 'style', 'color: red;')
+  })
+
+  it('.clear() - clears an input or textarea element', () => {
+    // https://on.cypress.io/clear
+    cy.get('.action-clear').type('Clear this text')
+      .should('have.value', 'Clear this text')
+      .clear()
+      .should('have.value', '')
+  })
+
+>>>>>>> parent of 784ddbd (removed test with blur)
   it('.submit() - submit a form', () => {
     // https://on.cypress.io/submit
     cy.get('.action-form')
